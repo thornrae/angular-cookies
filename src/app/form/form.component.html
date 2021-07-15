@@ -1,0 +1,49 @@
+<!-- <script>
+  angular.module('submitExample', [])
+    .controller('salmonController') {
+
+</script> -->
+<!-- 
+<script>
+   angular.module('salmonController', [])
+    .controller('salmonController', ['$scope', function($scope) {
+      $scope.list = [];
+      $scope.location = 'hello';
+      $scope.min = 4
+      $scope.max = 3
+      $scope.avg = 2
+      $scope.submit = function() {
+        if ($scope.location) {
+          $scope.list.push(this.location);
+          // $scope.list.push(this.text);
+          // $scope.list.push(this.text);
+          // $scope.list.push(this.text);
+          $scope.location = '';
+        }
+      };
+    }]);
+
+</script> -->
+
+TODO: remove this: {{model | json}}
+
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <legend>Enter New Store Sales Information</legend>
+    
+    <label for="location">Store Location</label>
+    <input type="text" name="location" id="location" [(ngModel)]="model.location">
+
+    <label for="min">Min Customer</label>
+    <input type="number" name="min" name="min" [(ngModel)]="model.min">
+
+    <label for="max">Max Customer</label>
+    <input type="number" name="max" id="max" [(ngModel)]="model.max" >
+
+    <label for="avg">Average Sale</label>
+    <input type="number" name="avg" id="avg" [(ngModel)]="model.avg">
+
+    <button type="submit" (click)="newStore()">Submit</button>
+
+  </fieldset>
+</form>
