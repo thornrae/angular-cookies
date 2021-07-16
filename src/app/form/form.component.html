@@ -37,6 +37,7 @@
 
     <div id="salmon cookies">
 
+<<<<<<< HEAD
       <table> 
         <tr> 
           <th *ngFor = "let hour of hours">
@@ -56,6 +57,8 @@
           {{hour}}
         </li>
       </ul> -->
+=======
+>>>>>>> 5faf532641a0caca58e7edb96a60eb6d28f56bdc
       <ul>
         <li *ngFor="let city of cityList">
           City: {{city.location}}
@@ -68,4 +71,20 @@
     </div>
 
   </form>
+
+  <table>
+    <tr>
+      <th *ngFor = "let header of headers">
+        {{header}}
+      </th>
+    </tr>
+
+    <tr *ngFor = "let column of columns">
+      {{column}}
+      <td *ngFor="let row of rows">
+        {{row}}
+      </td>
+    </tr>
+  </table>
+
 </div>
