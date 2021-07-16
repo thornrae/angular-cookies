@@ -23,7 +23,7 @@ Item 2: Multiple official tutorials covering the same subject leads to some conf
 #### Ratings and Reviews
 Anne: Seems like a steep learning curve, but I like the overall layout and think I would be able to work quickly with it in a few days.
 
-Arthur:
+Arthur:  I would need more time to work with this framework and would probably have to go through a tutorial in order to have a better understanding of the work flow.
 
 Nassir:
 
