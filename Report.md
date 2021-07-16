@@ -27,7 +27,7 @@ Arthur:
 
 Nassir:
 
-Taylor:
+Taylor: Agree that the learning curve is steep. For novice programmers, I think that this would take a couple weeks to figure out. But, the benefits that typescript offers would likely have significant pay off down the road. 
 
 #### Systems Requirements
 Above and beyond ‘node’ and ‘linux’, what dependencies or core requirements exist for this framework? Can it play at AWS/Heroku? Does it require a certain database?
