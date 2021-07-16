@@ -1,49 +1,74 @@
-<!-- <script>
-  angular.module('submitExample', [])
-    .controller('salmonController') {
+<div>
 
-</script> -->
-<!-- 
-<script>
-   angular.module('salmonController', [])
-    .controller('salmonController', ['$scope', function($scope) {
-      $scope.list = [];
-      $scope.location = 'hello';
-      $scope.min = 4
-      $scope.max = 3
-      $scope.avg = 2
-      $scope.submit = function() {
-        if ($scope.location) {
-          $scope.list.push(this.location);
-          // $scope.list.push(this.text);
-          // $scope.list.push(this.text);
-          // $scope.list.push(this.text);
-          $scope.location = '';
-        }
-      };
-    }]);
+  <form id="store-form" #appForm="ngForm">
 
-</script> -->
+    <fieldset>
+      <legend>Enter New Store Sales Information</legend>
+      <label for="location">Store Location</label>
+      <input type="text" name="location" id="location" [(ngModel)]="model.location">
 
-TODO: remove this: {{model | json}}
+      <label for="min">Min Customer</label>
+      <input type="number" name="min" id="min" [(ngModel)]="model.min">
 
-<form #form="ngForm" (ngSubmit)="onSubmit()">
-  <fieldset>
-    <legend>Enter New Store Sales Information</legend>
+      <label for="max">Max Customer</label>
+      <input type="number" name="max" id="max" [(ngModel)]="model.max">
+
+
+      <label for="average">Average Sale</label>
+      <input type="number" name="average" id="average" [(ngModel)]="model.average">
+
+      <button type="button" class="btn btn-default" (click)="newCity(appForm.value); appForm.reset()">Add
+        Location</button>
+    </fieldset>
+
+    <div id="salmon cookies">
+      <table>
+        <tr>
+          <th *ngFor="let header of headers">
+            {{header}}
+          </th>
+        </tr>
     
-    <label for="location">Store Location</label>
-    <input type="text" name="location" id="location" [(ngModel)]="model.location">
+        <tr *ngFor="let column of columns">
+          <td>{{column}}</td>
+          <div *ngFor="let row of rows">
+            <td *ngFor="let i of row.i">
+              {{i}}
+            </td>
+          </div>
+        </tr>
+    
+      </table>
 
-    <label for="min">Min Customer</label>
-    <input type="number" name="min" name="min" [(ngModel)]="model.min">
+      <ul>
+        <li *ngFor="let city of cityList">
+          City: {{city.location}}
+          Min Customers: {{city.min}}
+          Max Customers: {{city.max}}
+          Average: {{city.average}}
+        </li>
+      </ul>
 
-    <label for="max">Max Customer</label>
-    <input type="number" name="max" id="max" [(ngModel)]="model.max" >
+    </div>
 
-    <label for="avg">Average Sale</label>
-    <input type="number" name="avg" id="avg" [(ngModel)]="model.avg">
+  </form>
 
-    <button type="submit" (click)="newStore()">Submit</button>
+  <!-- <table>
+    <tr>
+      <th *ngFor="let header of headers">
+        {{header}}
+      </th>
+    </tr>
 
-  </fieldset>
-</form>
+    <tr *ngFor="let column of columns">
+      <td>{{column}}</td>
+      <div *ngFor="let row of rows">
+        <td *ngFor="let i of row.i">
+          {{i}}
+        </td>
+      </div>
+    </tr>
+
+  </table> -->
+
+</div>
