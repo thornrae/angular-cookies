@@ -25,7 +25,7 @@ Anne: Seems like a steep learning curve, but I like the overall layout and think
 
 Arthur:  I would need more time to work with this framework and would probably have to go through a tutorial in order to have a better understanding of the work flow.
 
-Nassir:
+Nassir: I need more time to understand
 
 Taylor: Agree that the learning curve is steep. For novice programmers, I think that this would take a couple weeks to figure out. But, the benefits that typescript offers would likely have significant pay off down the road. 
 
