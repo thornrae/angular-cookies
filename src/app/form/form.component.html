@@ -58,11 +58,14 @@
     </tr>
 
     <tr *ngFor = "let column of columns">
-      {{column}}
-      <td *ngFor="let row of rows">
-        {{row}}
-      </td>
+      <td>{{column}}</td>
+      <div *ngFor="let row of rows">
+        <td *ngFor="let i of row.i">
+          {{i}}
+        </td>
+      </div>
     </tr>
+
   </table>
 
 </div>
